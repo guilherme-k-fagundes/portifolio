@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+.menuDesktop {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.8em 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+}
+.menuDesktop .menuDesktopContent {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menuDesktop .menuDesktopContent a {
+  text-decoration: none;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 0 1em;
+}
+.menuDesktop .menuDesktopContent a:hover {
+  text-decoration: underline;
+}
+
+.sessHome {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078FF;
+}
+.sessHome .homeContent {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sessHome .homeContent .homeTitle {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+.sessHome .homeContent .homeDesc {
+  font-size: 1.5em;
+  color: #f1f1f1;
+  font-style: italic;
+  font-weight: 100;
+}
+.sessAbout {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.sessAbout .aboutHeader {
+  text-align: center;
+}
+.sessAbout .aboutHeader .aboutTitle {
+  font-size: 3.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 1em 0;
+  color: #0078FF;
+}
+.sessAbout .aboutContent {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+}
+.sessAbout .aboutContent .aboutContentDesc {
+  margin-top: 10%;
+  text-align: center;
+}
+.sessAbout .aboutContent .aboutContentDesc p {
+  color: #0078FF;
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-style: italic;
+}
+.sessAbout .aboutContent .aboutContentDesc p span {
+  font-weight: 800;
+}
+.sessServices {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #eff6ff;
+}
+@media all and (max-width: 56.25em) {
+  .sessServices {
+    height: 100% !important;
+  }
+}
+.sessServices .servicesHeader {
+  width: 95%;
+  margin: 0 auto;
+}
+.sessServices .servicesHeader .servicesTitle {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 1em 0;
+  color: #0078FF;
+}
+.sessServices .servicesContent {
+  width: 95%;
+  margin: 0 auto;
+}
+.sessServices .servicesContent .listServices {
+  margin-top: 10%;
+  padding-top: 5%;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+@media all and (max-width: 56.25em) {
+  .sessServices .servicesContent .listServices {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
+.sessServices .servicesContent .listServices .serviceBox {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+  background-color: #0078FF;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.sessServices .servicesContent .listServices .serviceBox:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+}
+.sessServices .servicesContent .listServices .serviceBox .serviceHeader {
+  padding: 1em;
+  color: white;
+}
+.sessServices .servicesContent .listServices .serviceBox .serviceHeader p {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 5px;
+}
+.sessServices .servicesContent .listServices .serviceBox .serviceBody {
+  padding: 1em 1em;
+}
+.sessServices .servicesContent .listServices .serviceBox .serviceBody p {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+.sessFooter {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em 0;
+  margin-top: 1em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.sessFooter .footerContent {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
